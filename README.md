@@ -1,8 +1,8 @@
-### Remove AWS Default VPCs
+# Remove AWS Default VPCs
 
 This Python script attempts to delete the AWS default VPC in each region.
 
-**Requirements:**
+## Requirements
 
 * Tested with:
    * Python version: 3.10.8
@@ -10,21 +10,13 @@ This Python script attempts to delete the AWS default VPC in each region.
    * Botocore version: 1.29.4
 * Valid AWS API keys/profile
 
-**Setup:**
-
-Update with your AWS profile / credentials.
+## Usage
 
 ```
-main(profile = '<YOUR_PROFILE>')
+python remove_vpc.py <YOUR_PROFILE>
 ```
 
-**Usage:**
-
-```
-python remove_vpc.py
-```
-
-**Output:**
+## Output
 
 ```
 VPC vpc-0b43a362 has been deleted from the ap-south-1 region.
@@ -44,7 +36,7 @@ VPC (default) was not found in the us-west-1 region.
 VPC vpc-1839c57d has existing resources in the us-west-2 region.
 ```
 
-**References:**
+## References 
 
 * https://boto3.amazonaws.com/v1/documentation/api/latest/guide/configuration.html
 
