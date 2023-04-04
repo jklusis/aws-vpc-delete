@@ -252,5 +252,5 @@ def main(profile):
 
 if __name__ == "__main__":
 
-  main(profile = '<YOUR_PROFILE>')
+  main(profile = sys.argv[1])
 
